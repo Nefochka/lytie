@@ -8,6 +8,7 @@ gem 'rails', '4.0.0'
 gem 'haml'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
+gem 'rails_12factor', group: :production
 
 # Use Postdresql as the database for Active Record
 gem 'sqlite3'
