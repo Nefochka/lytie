@@ -14,3 +14,22 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+ svn
+.hg
+*.o
+*.lo
+*.la
+#*#
+.*.rej
+*.rej
+.*~
+*~
+.#*
+*.swp
+*.old
+*.orig
+*.log
+tags
+ctags
+*.py[co]
+

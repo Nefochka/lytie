@@ -11,7 +11,7 @@ gem 'jquery-ui-rails'
 gem 'rails_12factor', group: :production
 
 # Use Postdresql as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
