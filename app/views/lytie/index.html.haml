@@ -1,9 +1,8 @@
 .masthead
-  %h3.muted
-    %font{:color=>'33aaff'} 
-      ИП ПАРШУКОВ А.В., ЛИТЬЕ ИЗ ПОЛИПРОПИЛЕНА
+  %h3.muted.blue
+    ИП ПАРШУКОВ А.В., ЛИТЬЕ ИЗ ПОЛИПРОПИЛЕНА
 
-.jumbotron{:align=>'center'}
+.jumbotron.text-center
   %h2 Уважаемые клиенты!
   %p.lead Мы приглашаем Вас к сотрудничеству! 
   %p.lead Заказ нашей продукции в любых количествах. Литье на Ваших пресс-формах. Возможно изготовление пресс-форм. 
@@ -11,41 +10,33 @@
 
 .row-fluid
   .span4
-    %h2.page-header
-      %font{:color=>'33aaff'} 
-        Наша продукция:
+    %h2.page-header.blue
+      Наша продукция:
     %ul
-      %font{:face=>'coursive'}
-
-        %li крепления для москитной сетки.
-        %li нипель для обналичника пластиковых окон и дверей.
-        %li подпятник квадратный
+      %li крепления для москитной сетки.
+      %li нипель для обналичника пластиковых окон и дверей.
+      %li подпятник квадратный
     %p
-      %a.btn{:href=>"#"} Оформить заказ &raquo;
-        btn{:onclick=>"linkto:/zakaz.html.haml"}
-
+      = link_to 'Оформить заказ', new_order_path, :class => 'btn'
 
   .span4
-    %h2.page-header
-      %font{:color=>'33aaff'} 
-        Дополнительно:
+    %h2.page-header.blue
+      Дополнительно:
     %p
-      %font{:face=>'coursive'}
-        Материал: полипрепилен, полиэтилен низкого давления, полиэтилен высокого давления, полистирол.
+      Материал: полипрепилен, полиэтилен низкого давления, полиэтилен высокого давления, полистирол.
     %p
 
   .span4
-    %h2.page-header
-      %font{:color=>'33aaff'} 
-        Наши контакты:
-    %ul
-      %font{:face=>'coursive'}
-
-        %li ИП Паршуков Андрей Владимирович
-        %li e-mail: andrey.vrach@mail.ru
-        %li тел. 89182475311
-    %p 
-      %a.btn{:href=>"mailto:andrey.vrach@mail.ru"} Написать письмо &raquo;
+    %h2.page-header.blue
+      Наши контакты:
+    %address
+      %strong ИП Паршуков Андрей Владимирович
+      %br
+      <abbr title="Email">e-mail:</abbr> andrey.vrach@mail.ru
+      %br
+      <abbr title="Телефон">тел.:</abbr> 89182475311
+    %p
+      = mail_to 'andrey.vrach@mail.ru', 'Написать письмо', :class => 'btn'
    
 %hr
 
