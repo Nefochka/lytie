@@ -1,1 +1,55 @@
-Here you'll see a form for order
+.row.color-back
+  .span12
+    .page-header
+      %h1.blue Заказ продукции:
+.row.color-back
+  .span10.offset1
+    %form.form-horizontal{:method => "post", :action => "mailto:nefirtity@mail.ru"}
+      .control-group
+        %label.control-label{:for => "kreplenie"} Крепления для москитной сетки, 2 руб./шт.
+        .controls
+          %input{:type => "text", :name => "kreplenie"}
+          %span.help-block.blue Введите необходимое количество креплений для москитной сетки
+          %label.control-label{:type => "text", :value => "kreplenie*2"}
+      .control-group
+
+        %label.control-label{:for => "nipel"} Нипель для обналичника пластиковых окон и дверей, 2 руб./шт.
+        .controls
+          %input{:type => "text", :name => "nipel"}
+          %span.help-block.blue Введите необходимое количество нипеля для обналичника пластиковых окон и дверей
+          %label.control-label{:type => "text", :value => "nipel*2"}
+      .control-group
+
+        %label.control-label{:for => "podpyatnik"} Подпятник квадратный, 2 руб./шт.
+        .controls
+          %input{:type => "text", :name => "podpyatnik"}
+          %span.help-block.blue Введите необходимое количество подпятников квадратных
+          %label.control-label{:type => "text", :value => "podpyatnik*2"}
+      .control-group
+
+        %label.control-label{:for => "FIO"} *Введите Ваши Ф.И.О:
+        .controls
+          %input{:type => "text", :name => "FIO", :required => "Ваше имя"}
+          %span.help-block
+          %label.control-label{:type => "text", :value => "FIO"}
+      .control-group
+
+        %label.control-label{:for => "telephone"} *Введите Ваш контактный телефон:
+        .controls
+          %input{:type => "text", :name => "telephone", :required => "Ваш телефон"}
+          %span.help-block 
+          %label.control-label{:type => "text", :value => "telephone"}
+      .control-group
+
+        %label.control-label{:for => "email"} Введите Ваш e-mail:
+        .controls
+          %input{:type => "text", :name => "email"}
+          %span.help-block 
+          %label.control-label{:type => "text", :value => "email"}
+      .control-group
+
+
+      .form-actions.color-back
+        %button.btn.btn-primary{:type => "submit"} Отправить заказ
+
+

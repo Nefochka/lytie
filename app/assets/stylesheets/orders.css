@@ -2,3 +2,7 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+.color-back{
+    background: #333; /* Цвет фона */
+    color: #fc0; /* Цвет текста */
+   }
