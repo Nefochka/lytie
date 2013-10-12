@@ -9,6 +9,12 @@ body {
 .blue {
   color: #33aaff;
 }
+.red {
+  color: red;
+}
+.white {
+  color: white;
+}
 /* Custom container */
 .container {
   margin: 0 auto;

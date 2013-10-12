@@ -4,52 +4,46 @@
       %h1.blue Заказ продукции:
 .row-order.color-back
   .span13.offset0
-    %form.form-horizontal{:method => 'post', :action => 'mailto:nefirtity@mail.ru'}
+    %form.form-horizontal{:method => 'post', :action => 'mailto:nefochka@gmail.ru'}
+      =image_tag('kreplenie.jpeg', :class => 'my_class', height: "45", width: "45", :align => 'left')
       .control-group
         %label.control-label-order{:for => 'kreplenie'} Крепления для москитной сетки:
         .controls
           %input{:type => 'text', :name => 'kreplenie', :placeholder => 'количество'}
-          %span.help-block.blue Введите необходимое количество креплений для москитной сетки
-          %label.control-label{:type => 'text', :value => 'kreplenie'}
-      .control-group
 
-        %label.control-label-order{:for => 'nipel'} Нипель для обналичника м/п окон и дверей:
+      .control-group
+        =image_tag('nippel.jpeg', :class => 'my_class', height: "45", width: "45", :align => 'left')
+        %label.control-label-order{:for => 'nippel'} Ниппель для обналичника м/п окон и дверей:
         .controls
-          %input{:type => 'text', :name => 'nipel', :placeholder => 'количество'}
-          %span.help-block.blue Введите необходимое количество нипеля для обналичника м/п окон и дверей
-          %label.control-label{:type => 'text', :value => 'nipel'}
-      .control-group
+          %input{:type => 'text', :name => 'nippel', :placeholder => 'количество'}
 
+      .control-group
+        =image_tag('podpyatnik.jpeg', :class => 'my_class', height: "45", width: "45", :align => 'left')
         %label.control-label-order{:for => 'podpyatnik'} Подпятник квадратный:
         .controls
           %input{:type => 'text', :name => 'podpyatnik', :placeholder => 'количество'}
-          %span.help-block.blue Введите необходимое количество подпятников квадратных
-          %label.control-label{:type => 'text', :value => 'podpyatnik'}
-      .control-group
 
-        %label.control-label-order{:for => 'FIO'} *Введите Ваши Ф.И.О:
+      .control-group
+        %label.control-label-order-1{:for => 'FIO'} *Введите Ваши Ф.И.О:
         .controls
           %input{:type => 'text', :name => 'FIO', :placeholder => 'Ф.И.О.', :required => 'Ваше имя'}
-          %span.help-block
-          %label.control-label{:type => 'text', :value => 'FIO'}
-      .control-group
 
-        %label.control-label-order{:for => 'telephone'} *Введите Ваш контактный телефон:
+      .control-group
+        %label.control-label-order-1{:for => 'telephone'} *Введите Ваш контактный телефон:
         .controls
           %input{:type => 'text', :name => 'telephone', :placeholder => 'номер телефона', :required => 'Ваш телефон'}
-          %span.help-block 
-          %label.control-label{:type => 'text', :value => 'telephone'}
-      .control-group
 
-        %label.control-label-order{:for => 'email'} Введите Ваш e-mail:
+      .control-group
+        %label.control-label-order-1{:for => 'email'} Введите Ваш e-mail:
         .controls
           %input{:type => 'text', :name => 'email', :placeholder => 'e-mail'}
-          %span.help-block 
-          %label.control-label{:type => 'text', :value => 'email'}
       .control-group
 
 
+      %h8.em.white Поля, помеченные *, обязательны для заполнения
       .form-actions.color-back
         %button.btn.btn-primary{:type => 'submit', :align => 'middle'} Отправить заказ
+
+
 
 

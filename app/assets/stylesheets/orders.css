@@ -142,9 +142,25 @@
 
 .form-horizontal .control-label-order {
   float: left;
-  width: 300px;
-  padding-top: 5px;
+  width: 360px;
+  padding-top: 0px;
   text-align: left;
+  height: 45px;
+  margin-left: 20px;
+}
+.form-horizontal .control-label-order-1 {
+  float: left;
+  width: 360px;
+  padding-top: 0px;
+  text-align: left;
+  height: 20px;
+  margin-left: 70px;
+}
+.form-horizontal .control-label {
+  float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right;
 }
 
 .form-actions-order{
@@ -159,3 +175,18 @@
 .form-horizontal .form-actions {
   padding-left: 360px;
 }
+
+.lead-my {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.color-back {
+  .background-color: #aaaaaa;
+}
+.color-back-2 {
+  .background-color: #eeffaa;
+}
+

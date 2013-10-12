@@ -1,20 +1,32 @@
 .masthead
-  %h3.muted.blue
-    ИП ПАРШУКОВ А.В., ЛИТЬЕ ИЗ ПОЛИПРОПИЛЕНА
-
-.jumbotron.text-center
-  %h2 Уважаемые клиенты!
-  %p.lead Мы приглашаем Вас к сотрудничеству! 
-  %p.lead Заказ нашей продукции в любых количествах. Литье на Ваших пресс-формах. Возможно изготовление пресс-форм. 
-  %p.lead Низкие цены. Кратчайшие сроки.
+.color-back
+  .img-rounded
+    =image_tag('stanok.png', :class => 'my_class', height: "100", width: "100")
+    =image_tag('stanok3.jpg', :class => 'my_class', height: "100", width: "100")
+    =image_tag('stanok4.jpg', :class => 'my_class', height: "100", width: "100")
+    =image_tag('stanok5.jpg', :class => 'my_class', height: "100", width: "100")
+    =image_tag('stanok.png', :class => 'my_class', height: "100", width: "100")
+    =image_tag('stanok3.jpg', :class => 'my_class', height: "100", width: "100")
+    =image_tag('stanok4.jpg', :class => 'my_class', height: "100", width: "100")
+    =image_tag('stanok5.jpg', :class => 'my_class', height: "100", width: "100")
+    =image_tag('stanok.png', :class => 'my_class', height: "100", width: "100")
+  
+.text-center
+  %br
+  %br
+  %h3 Уважаемые клиенты!
+  %p.lead-my Мы приглашаем Вас к сотрудничеству! 
+  %p.lead-my Заказ нашей продукции в любых количествах. Литье на Ваших пресс-формах. Возможно изготовление пресс-форм. 
+  %p.lead-my Низкие цены. Кратчайшие сроки.
 
 .row-fluid
+
   .span4
     %h2.page-header.blue
       Наша продукция:
     %ul
       %li крепления для москитной сетки.
-      %li нипель для обналичника пластиковых окон и дверей.
+      %li ниппель для обналичника пластиковых окон и дверей.
       %li подпятник квадратный
     %p
       = link_to 'Оформить заказ', new_order_path, :class => 'btn'
@@ -39,5 +51,3 @@
       = mail_to 'andrey.vrach@mail.ru', 'Написать письмо', :class => 'btn'
    
 %hr
-
-
