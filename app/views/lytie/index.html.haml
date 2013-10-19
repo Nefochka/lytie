@@ -1,5 +1,5 @@
-.masthead
 .color-back
+<<<<<<< HEAD
   .img-rounded
     =image_tag('stanok.png', :class => 'my_class', height: "100", width: "100", hspace: "2", vspace: '3')
     =image_tag('stanok3.jpg', :class => 'my_class', height: "100", width: "100", hspace: "0", vspace: '3')
@@ -10,44 +10,55 @@
     =image_tag('stanok.png', :class => 'my_class', height: "100", width: "100", hspace: "0", vspace: '3')
     =image_tag('stanok3.jpg', :class => 'my_class', height: "100", width: "100", hspace: "0", vspace: '3')
     =image_tag('stanok5.jpg', :class => 'my_class', height: "100", width: "100", hspace: "0", vspace: '3')
+=======
+  = image_tag('stanok.png',  :class => 'img-rounded', height: "77", width: "113")
+  = image_tag('stanok3.jpg', :class => 'img-rounded', height: "77", width: "113")
+  = image_tag('stanok4.jpg', :class => 'img-rounded', height: "77", width: "113")
+  = image_tag('stanok5.jpg', :class => 'img-rounded', height: "77", width: "113")
+  = image_tag('stanok.png',  :class => 'img-rounded', height: "77", width: "113")
+  = image_tag('stanok3.jpg', :class => 'img-rounded', height: "77", width: "113")
+  = image_tag('stanok4.jpg', :class => 'img-rounded', height: "77", width: "113")
+  = image_tag('stanok5.jpg', :class => 'img-rounded', height: "77", width: "113")
+>>>>>>> 82b5b09ed1c78c798fdcbc13c4abd2d8620dd51b
   
 .text-center
   %br
-  %br
   %h3 Уважаемые клиенты!
   %p.lead-my Мы приглашаем Вас к сотрудничеству! 
-  %p.lead-my Заказ нашей продукции в любых количествах. Литье на Ваших пресс-формах. Возможно изготовление пресс-форм. 
+  %p.lead-my 
+    Заказ нашей продукции в любых количествах. Литье на Ваших пресс-формах.
+    %br
+    Возможно изготовление пресс-форм. 
   %p.lead-my Низкие цены. Кратчайшие сроки.
 
 .row-fluid
-
   .span4
-    %h2.page-header.blue
+    %h3.page-header.blue
       Наша продукция:
     %ul
       %li крепления для москитной сетки.
       %li ниппель для обналичника пластиковых окон и дверей.
       %li подпятник квадратный
-    %p
-      = link_to 'Оформить заказ', new_order_path, :class => 'btn'
 
   .span4
-    %h2.page-header.blue
-      Дополнительно:
+    %h3.page-header.blue
+      Материал:
     %p
-      Материал: полипрепилен, полиэтилен низкого давления, полиэтилен высокого давления, полистирол.
+      %ul
+        %li полипрепилен
+        %li полиэтилен низкого давления
+        %li полиэтилен высокого давления
+        %li полистирол.
     %p
+      = link_to 'Оформить заказ', new_order_path, :class => 'btn btn-large btn-primary'
 
   .span4
-    %h2.page-header.blue
+    %h3.page-header.blue
       Наши контакты:
     %address
       %strong ИП Паршуков Андрей Владимирович
       %br
-      <abbr title="Email">e-mail:</abbr> andrey.vrach@mail.ru
+      <abbr title="Email">e-mail:</abbr>
+      = mail_to 'andrey.vrach@mail.ru', 'andrey.vrach@mail.ru', {:subject => 'Литие из полипропилена'}
       %br
       <abbr title="Телефон">тел.:</abbr> 89182475311
-    %p
-      = mail_to 'andrey.vrach@mail.ru', 'Написать письмо', :class => 'btn'
-   
-%hr
