@@ -5,34 +5,57 @@
 .row-order.color-back
   .span13.offset0
     %form.form-horizontal{:method => 'post', :action => 'mailto:nefochka@gmail.ru'}
-      =image_tag('kreplenie.jpeg', :class => 'my_class', height: "45", width: "45", :align => 'left')
+
+      -# блок для крепления
       .control-group
+        =image_tag('kreplenie.jpeg', :class => 'class_large_4', height: "45", width: "45", :align => 'left')
         %label.control-label-order{:for => 'kreplenie'} Крепления для москитной сетки:
         .controls
           %input{:type => 'text', :name => 'kreplenie', :placeholder => 'количество'}
+        =hidden_field_tag(:value => params[:kreplenie])
+        %label{:value => params[:kreplenie]}
 
+      -# блок для ниппеля
       .control-group
-        =image_tag('nippel.jpeg', :class => 'my_class', height: "45", width: "45", :align => 'left')
+        =image_tag('nippel.jpeg', :class => 'class_large_4', height: "45", width: "45", :align => 'left')
         %label.control-label-order{:for => 'nippel'} Ниппель для обналичника м/п окон и дверей:
         .controls
           %input{:type => 'text', :name => 'nippel', :placeholder => 'количество'}
 
+      -# блок для подпятника
       .control-group
-        =image_tag('podpyatnik.jpeg', :class => 'my_class', height: "45", width: "45", :align => 'left')
+        =image_tag('podpyatnik.jpeg', :class => 'class_large_4', height: "45", width: "45", :align => 'left')
         %label.control-label-order{:for => 'podpyatnik'} Подпятник квадратный:
         .controls
           %input{:type => 'text', :name => 'podpyatnik', :placeholder => 'количество'}
 
+      -# блок для z-крепления
+      .control-group
+        =image_tag('z-kreplenie2.jpg', :class => 'class_large_6', height: "45", width: "45", :align => 'left')
+        %label.control-label-order{:for => 'z-kreplenie'} Z-крепление для москитной сетки (металл):
+        .controls
+          %input{:type => 'text', :name => 'z-kreplenie', :placeholder => 'количество'}
+
+      -# блок для уголка
+      .control-group
+        =image_tag('ugolok2.jpg', :class => 'class_large_6', height: "45", width: "45", :align => 'left')
+        %label.control-label-order{:for => 'ugolok'} Уголок для москитной сетки:
+        .controls
+          %input{:type => 'text', :name => 'ugolok', :placeholder => 'количество'}
+
+      -# блок для ФИО
       .control-group
         %label.control-label-order-1{:for => 'FIO'} *Введите Ваши Ф.И.О:
         .controls
           %input{:type => 'text', :name => 'FIO', :placeholder => 'Ф.И.О.', :required => 'Ваше имя'}
 
+      -# блок для телефона
       .control-group
-        %label.control-label-order-1{:for => 'telephone'} *Введите Ваш контактный телефон:
+        %label.control-label-order-1{:for => 'telephone'} *Введите Ваш контактный телефон в формате (###)###-##-##:
         .controls
-          %input{:type => 'text', :name => 'telephone', :placeholder => 'номер телефона', :required => 'Ваш телефон'}
+          %input{:type => 'text', :name => 'telephone', :placeholder => '(###)###-##-##', :required => 'Ваш телефон', :pattern => '\(\d{1,3}\)\d{1,3}\-\d{1,2}\-\d{1,2}'}
 
+      -# блок для e-mail
       .control-group
         %label.control-label-order-1{:for => 'email'} Введите Ваш e-mail:
         .controls
@@ -43,7 +66,5 @@
       %h8.em.white Поля, помеченные *, обязательны для заполнения
       .form-actions.color-back
         %button.btn.btn-primary{:type => 'submit', :align => 'middle'} Отправить заказ
-
-
 
 
