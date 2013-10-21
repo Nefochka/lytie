@@ -195,7 +195,7 @@
     display: block;
     width: 45px;
     height: 45px;
-    float: center;
+    float: left;
     margin: 0 3px 3px 0;
     opacity: 1;
     -webkit-transform: scale(1,1);
@@ -205,6 +205,22 @@
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 250ms;
 }
+.class_large_my_4:hover {
+    -moz-transform: scale(4.2,4.28) translate(-15px,-15px);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
+}
+
+.class_large_my_5:hover {
+    -moz-transform: scale(5.25,5.35) translate(-17px,-17px);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
+}
+
 .class_large:hover {
     opacity: 1;  /*prozrachnost*/
     -webkit-transform: scale(1.05,1.07);
