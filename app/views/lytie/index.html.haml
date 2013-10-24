@@ -52,7 +52,27 @@
       <abbr title="Телефон">тел.:</abbr> 89182475311
 
 
-.fb-like
-  %iframe{:src=>"//www.facebook.com/plugins/like.php?href=http://lytie.herokuapp.com/&send=false&layout=standard&width=450&show_faces=false&action=like&colorscheme=light&font&height=35", :scrolling=>"no", :frameborder=>"0", :style=>"border:none; overflow:hidden; width:450px; height:35px;", :allowTransparency=>"true"}
+.row-fluid
+  .span3
+    .fb-like
+      %iframe{:src=>"//www.facebook.com/plugins/like.php?href=http://lytie.herokuapp.com/&send=false&layout=standard&width=450&show_faces=false&action=like&colorscheme=light&font&height=35", :scrolling=>"no", :frameborder=>"0", :style=>"border:none; overflow:hidden; width:450px; height:35px;", :allowTransparency=>"true"}
+  .span3
+    =link_to 'Твитнуть', 'http://lytie.herokuapp.com/', :class=>"twitter-share-button", :lang=>"ru"
+
+--#  %a{:href=>"http://lytie.herokuapp.com/", :class=>"twitter-share-button", :related=>"jasoncosta", :lang=>"en", :size=>"large", :count=>"none"}Tweet
+
+:javascript
+  !function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id))
+      {js=d.createElement(s);js.id=id;
+      js.src="https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js,fjs);
+      }
+    }(document,"script","twitter-wjs");
+
+
+
+
 
 

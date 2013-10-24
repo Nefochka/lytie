@@ -214,7 +214,7 @@
 }
 
 .class_large_my_5:hover {
-    -moz-transform: scale(5.25,5.35) translate(17px,-16px);
+    -moz-transform: scale(5.25,5.35) translate(17px,-15px);
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 250ms;
     position: relative;
