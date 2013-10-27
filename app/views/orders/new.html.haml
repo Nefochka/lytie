@@ -6,15 +6,6 @@
   .span13.offset0
     %form.form-horizontal{:method => 'post', :action => 'mailto:nefochka@gmail.ru'}
 
-      -# блок для крепления
-      .control-group
-        =image_tag('kreplenie.jpeg', :class => 'class_large_my_4', height: "50", width: "50", :align => 'left')
-        %label.control-label-order{:for => 'kreplenie'} Крепления для москитной сетки:
-        .controls
-          %input{:type => 'text', :name => 'kreplenie', :placeholder => 'количество'}
-        =hidden_field_tag(:value => params[:kreplenie])
-        %label{:value => params[:kreplenie]}
-
       -# блок для ниппеля
       .control-group
         =image_tag('nippel.jpeg', :class => 'class_large_my_4', height: "50", width: "50", :align => 'left')
