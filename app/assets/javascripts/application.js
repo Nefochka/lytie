@@ -13,5 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-= require turbolinks
 //= require_tree .
+
+
+$('document').on 'click', '.edit_task input[type=checkbox]', ->
+    $(this).parent('form').submit()
