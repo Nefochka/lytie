@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
-// require social.js
 //= require_tree .
 
 
